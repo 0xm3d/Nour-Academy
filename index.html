@@ -1,51 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nour Academy | Home</title>
+    <title>Nour Academy</title>
     <script type="module" src="/src/main.js"></script>
 </head>
+<body class="bg-[var(--color-background)] font-[var(--font-family)]">
 
-<body>
-
-    <header class="flex items-center justify-between px-[60px] py-[14px] bg-[#f7f7ef] border-b border-[#e5e5d8]">
-
-        <a href="#" class="flex items-center">
-            <img src="images/logo.svg" alt="Nour Academy Logo" width="105" height="28" class="h-[28px] w-auto">
+    <header class="flex items-center justify-between border-b border-[var(--color-soft)] px-6 py-4 md:px-[60px]">
+        <a href="#">
+            <img src="images/logo.svg" alt="Nour Academy" class="h-7">
         </a>
 
-        <nav>
-            <ul class="flex items-center gap-[24px] text-[10px] text-[#173e36]">
-                <li>
-                    <a href="#" class="font-semibold hover:opacity-70">
-                        Accueil
-                    </a>
-                </li>
-                <li>
-                    <a href="#cours" class="hover:opacity-70">
-                        Cours
-                    </a>
-                </li>
-                <li>
-                    <a href="#centres" class="hover:opacity-70">
-                        Centres
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact" class="hover:opacity-70">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+        <nav class="flex gap-6 text-xs text-[var(--color-primary)]">
+            <a href="#accueil">Accueil</a>
+            <a href="#cours">Cours</a>
+            <a href="#centres">Centres</a>
+            <a href="#contact">Contact</a>
         </nav>
-        <a href="#cours"
-            class="rounded-[7px] bg-[#19473e] px-[14px] py-[11px] text-[10px] font-medium text-white transition-colors hover:bg-[#286456]">
+
+        <a href="#cours" class="rounded-md bg-[var(--color-primary)] px-4 py-3 text-xs text-white">
             Trouver un cours
         </a>
-
     </header>
-</body>
 
+    <main id="accueil" class="grid min-h-[85vh] items-center gap-8 px-6 py-10 md:grid-cols-2 md:px-[60px]">
+        <div>
+            <p class="mb-6 text-xs font-semibold uppercase text-[var(--color-primary)]">
+                • Grandir ensemble, à Nador
+            </p>
+
+            <h1 class="mb-6 text-4xl font-semibold text-[var(--color-primary)] md:text-[40px]">
+                Le bon cours pour réussir demain
+            </h1>
+
+            <p class="mb-6 text-sm leading-6 text-[var(--color-muted)]">
+                Des petits groupes, des professeurs à l’écoute et le plaisir de progresser.
+                Du collège au lycée, trouvons le cours qui fera la différence.
+            </p>
+
+            <a href="#cours" class="inline-block rounded-md bg-[var(--color-primary)] px-4 py-3 text-sm text-white">
+                 Découvrir les cours
+            </a>
+
+            <p class="mt-6 text-xs text-[var(--color-muted)]">
+                 Sans frais d’inscription · Paiement au centre
+            </p>
+        </div>
+
+        <img src="images/hero.jpg" alt="Élève en train d’apprendre" class="w-full rounded-xl">
+    </main>
+
+</body>
 </html>
