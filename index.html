@@ -72,6 +72,65 @@
             </p>
         </section>
 
+        <section id="cours" class="px-6 py-10 md:px-[60px]">
+
+            <p class="mb-3 text-xs font-semibold uppercase text-[var(--color-primary)]">
+                01 / Trouver sa voie
+            </p>
+
+            <h2 class="mb-2 text-3xl font-semibold text-[var(--color-primary)]">
+                Un cours pour chaque déclic.
+            </h2>
+
+            <p class="mb-6 text-sm text-[var(--color-muted)]">
+                Choisissez vos cours de soutien. Nous nous occupons de la suite.
+            </p>
+
+            <div class="grid grid-cols-1 items-end gap-3 md:grid-cols-[1fr_auto_auto]">
+
+                <div>
+                    <label for="recherche" class="mb-2 block text-xs font-medium text-[var(--color-primary)]">
+                        Rechercher un cours
+                    </label>
+                    <div
+                        class="flex items-center gap-3 rounded-lg border border-[var(--color-secondary)] bg-[var(--color-surface)] px-3 py-3">
+                        <i class="fa-solid fa-magnifying-glass text-[var(--color-muted)]" aria-hidden="true"></i>
+                        <input id="recherche" type="search" placeholder="Ex. : mathématiques..."
+                            class="w-full bg-transparent text-sm text-[var(--color-primary)] outline-none placeholder:text-[var(--color-muted)]">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="niveau" class="mb-2 block text-xs font-medium text-[var(--color-primary)]">
+                        Niveau scolaire
+                    </label>
+                    <select id="niveau"
+                        class="w-full rounded-lg border border-[var(--color-soft)] bg-[var(--color-surface)] px-3 py-3 text-sm text-[var(--color-muted)] outline-none focus:border-[var(--color-secondary)]">
+                        <option value="">Tous les niveaux</option>
+                        <option>Primaire</option>
+                        <option>Collège</option>
+                        <option>Lycée</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="matiere" class="mb-2 block text-xs font-medium text-[var(--color-primary)]">
+                        Matière
+                    </label>
+                    <select id="matiere"
+                        class="w-full rounded-lg border border-[var(--color-soft)] bg-[var(--color-surface)] px-3 py-3 text-sm text-[var(--color-muted)] outline-none focus:border-[var(--color-secondary)]">
+                        <option value="">Toutes les matières</option>
+                        <option>Mathématiques</option>
+                        <option>Français</option>
+                        <option>Physique-chimie</option>
+                        <option>Anglais</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
 </body>
