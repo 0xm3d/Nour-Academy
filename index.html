@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nour Academy</title>
     <script type="module" src="/src/main.js"></script>
 </head>
+
 <body class="bg-[var(--color-background)] font-[var(--font-family)]">
 
     <header class="flex items-center justify-between border-b border-[var(--color-soft)] px-6 py-4 md:px-[60px]">
@@ -25,32 +27,53 @@
         </a>
     </header>
 
-    <main id="accueil" class="grid min-h-[85vh] items-center gap-8 px-6 py-10 md:grid-cols-2 md:px-[60px]">
-        <div>
-            <p class="mb-6 text-xs font-semibold uppercase text-[var(--color-primary)]">
-                • Grandir ensemble, à Nador
+    <main>
+        <section class="grid min-h-[85vh] items-center gap-[10px]  px-6 py-10 md:grid-cols-2 md:px-[60px]">
+            <div>
+                <p class="mb-6 text-xs font-semibold uppercase text-[var(--color-primary)]">
+                    • Grandir ensemble, à Nador
+                </p>
+
+                <h1 class="mb-6 text-4xl font-semibold text-[var(--color-primary)] md:text-[40px]">
+                    Le bon cours pour réussir demain
+                </h1>
+
+                <p class="mb-6 text-sm leading-6 text-[var(--color-muted)]">
+                    Des petits groupes, des professeurs à l’écoute et le plaisir de progresser.
+                    Du collège au lycée, trouvons le cours qui fera la différence.
+                </p>
+
+                <a href="#cours" class="inline-block rounded-md bg-[var(--color-primary)] px-4 py-3 text-sm text-white">
+                    Découvrir les cours
+                </a>
+
+                <p class="mt-6 mb-0 text-xs text-[var(--color-muted)]">
+                    Sans frais d’inscription · Paiement au centre
+                </p>
+            </div>
+
+            <img src="images/hero.jpg" alt="Élève en train d’apprendre" class="w-full rounded-xl">
+        </section>
+        <section
+            class="flex flex-wrap items-center justify-around gap-4 bg-[var(--color-soft)] px-6 py-4 text-xs text-[var(--color-primary)]">
+            <p class="flex items-center gap-2">
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
+                Petits groupes, grands progrès
             </p>
 
-            <h1 class="mb-6 text-4xl font-semibold text-[var(--color-primary)] md:text-[40px]">
-                Le bon cours pour réussir demain
-            </h1>
-
-            <p class="mb-6 text-sm leading-6 text-[var(--color-muted)]">
-                Des petits groupes, des professeurs à l’écoute et le plaisir de progresser.
-                Du collège au lycée, trouvons le cours qui fera la différence.
+            <p class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                3 centres proches de vous
             </p>
 
-            <a href="#cours" class="inline-block rounded-md bg-[var(--color-primary)] px-4 py-3 text-sm text-white">
-                 Découvrir les cours
-            </a>
-
-            <p class="mt-6 text-xs text-[var(--color-muted)]">
-                 Sans frais d’inscription · Paiement au centre
+            <p class="flex items-center gap-2">
+                <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+                Un suivi pour chaque élève
             </p>
-        </div>
+        </section>
 
-        <img src="images/hero.jpg" alt="Élève en train d’apprendre" class="w-full rounded-xl">
     </main>
 
 </body>
+
 </html>
