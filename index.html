@@ -73,21 +73,21 @@
         </section>
 
         <section id="cours" class="px-6 py-10 md:px-[60px]">
-
+        
             <p class="mb-3 text-xs font-semibold uppercase text-[var(--color-primary)]">
                 01 / Trouver sa voie
             </p>
-
+        
             <h2 class="mb-2 text-3xl font-semibold text-[var(--color-primary)]">
                 Un cours pour chaque déclic.
             </h2>
-
+        
             <p class="mb-6 text-sm text-[var(--color-muted)]">
                 Choisissez vos cours de soutien. Nous nous occupons de la suite.
             </p>
-
+        
             <div class="grid grid-cols-1 items-end gap-3 md:grid-cols-[1fr_auto_auto]">
-
+        
                 <div>
                     <label for="recherche" class="mb-2 block text-xs font-medium text-[var(--color-primary)]">
                         Rechercher un cours
@@ -99,7 +99,7 @@
                             class="w-full bg-transparent text-sm text-[var(--color-primary)] outline-none placeholder:text-[var(--color-muted)]">
                     </div>
                 </div>
-
+        
                 <div>
                     <label for="niveau" class="mb-2 block text-xs font-medium text-[var(--color-primary)]">
                         Niveau scolaire
@@ -112,7 +112,7 @@
                         <option>Lycée</option>
                     </select>
                 </div>
-
+        
                 <div>
                     <label for="matiere" class="mb-2 block text-xs font-medium text-[var(--color-primary)]">
                         Matière
@@ -126,9 +126,17 @@
                         <option>Anglais</option>
                     </select>
                 </div>
-
+        
             </div>
 
+            <p id="compteur" class="mt-6 text-sm text-[var(--color-muted)]"></p>
+
+<div id="catalogue" class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
+
+<p id="aucun-resultat" class="mt-4 hidden text-sm text-[var(--color-muted)]">
+    Aucun cours ne correspond à votre recherche.
+</p>
+        
         </section>
 
     </main>
