@@ -4,14 +4,22 @@ import { courses } from "./courses.js";
 let catalogue = document.getElementById("catalogue");
 let counter = document.getElementById("compteur");
 let noResult = document.getElementById("aucun-resultat");
+let levelSelect = document.getElementById("niveau");
+let subjectSelect = document.getElementById("matiere");
 
 function showCourses() {
+  let chosenLevel = levelSelect.value;
+  let chosenSubject = subjectSelect.value;
   let count = 0;
 
   catalogue.innerHTML = "";
 
   for (let i = 0; i < courses.length; i++) {
     let c = courses[i];
+
+    if (chosenLevel != "" && c.level != chosenLevel) continue;
+
+    if (chosenSubject != "" && c.subject != chosenSubject) continue;
 
     count++;
 
@@ -49,5 +57,8 @@ function showCourses() {
     noResult.classList.add("hidden");
   }
 }
+
+levelSelect.addEventListener("change", showCourses);
+subjectSelect.addEventListener("change", showCourses);
 
 showCourses();
