@@ -178,6 +178,74 @@
 
         </section>
 
+        <section id="enrollment" class="p-[24px]">
+  <h2 class="text-[24px] font-semibold mb-[16px] text-center">Enrollment</h2>
+
+  <form id="enroll-form" novalidate class="flex flex-col gap-[16px] max-w-[448px] mx-auto">
+
+    <div>
+      <label for="parent-name">Parent's name</label>
+      <input id="parent-name" type="text" class="block w-full h-[44px] border-[2px] border-gray-300 rounded-[4px] px-[8px]">
+      <p id="parent-name-msg" class="text-[14px]"></p>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" class="block w-full h-[44px] border-[2px] border-gray-300 rounded-[4px] px-[8px]">
+      <p id="email-msg" class="text-[14px]"></p>
+    </div>
+
+    <div>
+      <label for="phone">Mobile phone</label>
+      <input id="phone" type="tel" class="block w-full h-[44px] border-[2px] border-gray-300 rounded-[4px] px-[8px]">
+      <p id="phone-msg" class="text-[14px]"></p>
+    </div>
+
+    <div>
+      <label for="student-name">Student's first name</label>
+      <input id="student-name" type="text" class="block w-full h-[44px] border-[2px] border-gray-300 rounded-[4px] px-[8px]">
+      <p id="student-name-msg" class="text-[14px]"></p>
+    </div>
+
+    <div>
+      <label for="student-level">Student's level</label>
+      <select id="student-level" class="block w-full h-[44px] border-[2px] border-gray-300 rounded-[4px] px-[8px]">
+        <option value="">Choose a level</option>
+        <option value="Primaire">Primary</option>
+        <option value="Collège">Middle school</option>
+        <option value="Lycée">High school</option>
+      </select>
+      <p id="student-level-msg" class="text-[14px]"></p>
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <input id="password" type="password" class="block w-full h-[44px] border-[2px] border-gray-300 rounded-[4px] px-[8px]">
+      <p id="password-msg" class="text-[14px]"></p>
+    </div>
+
+    <div>
+      <label for="confirm-password">Confirm password</label>
+      <input id="confirm-password" type="password" class="block w-full h-[44px] border-[2px] border-gray-300 rounded-[4px] px-[8px]">
+      <p id="confirm-password-msg" class="text-[14px]"></p>
+    </div>
+
+    <div>
+      <input id="consent" type="checkbox" class="w-[24px] h-[24px]">
+      <label for="consent">I agree that Nour Academy may use this information to process the enrollment.</label>
+      <p id="consent-msg" class="text-[14px]"></p>
+      <p class="text-[12px] text-gray-600">
+        Your data is used only to process your request (law 09-08).
+      </p>
+    </div>
+
+    <button type="submit" class="h-[44px] bg-blue-900 text-white rounded-[4px]">
+      Send my enrollment
+    </button>
+
+  </form>
+</section>
+
     </main>
 
 </body>
