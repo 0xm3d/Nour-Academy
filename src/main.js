@@ -6,10 +6,12 @@ let counter = document.getElementById("compteur");
 let noResult = document.getElementById("aucun-resultat");
 let levelSelect = document.getElementById("niveau");
 let subjectSelect = document.getElementById("matiere");
+let searchInput = document.getElementById("recherche");
 
 function showCourses() {
   let chosenLevel = levelSelect.value;
   let chosenSubject = subjectSelect.value;
+  let search = searchInput.value.toLowerCase().trim();
   let count = 0;
 
   catalogue.innerHTML = "";
@@ -20,6 +22,9 @@ function showCourses() {
     if (chosenLevel != "" && c.level != chosenLevel) continue;
 
     if (chosenSubject != "" && c.subject != chosenSubject) continue;
+
+    let text = (c.title + " " + c.subject).toLowerCase();
+    if (!text.includes(search)) continue;
 
     count++;
 
@@ -60,5 +65,6 @@ function showCourses() {
 
 levelSelect.addEventListener("change", showCourses);
 subjectSelect.addEventListener("change", showCourses);
+searchInput.addEventListener("input", showCourses);
 
 showCourses();
