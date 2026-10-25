@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,14 +16,14 @@
         </a>
 
         <nav class="flex gap-6 text-xs text-[var(--color-primary)]">
-            <a href="#accueil">Accueil</a>
-            <a href="#cours">Cours</a>
-            <a href="#centres">Centres</a>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#centers">Centers</a>
             <a href="#contact">Contact</a>
         </nav>
 
-        <a href="#cours" class="rounded-md bg-[var(--color-primary)] px-4 py-3 text-xs text-white">
-            Trouver un cours
+        <a href="#courses" class="rounded-md bg-[var(--color-primary)] px-4 py-3 text-xs text-white">
+            Find a course
         </a>
     </header>
 
@@ -31,101 +31,101 @@
         <section class="grid min-h-[85vh] items-center gap-[10px] px-6 py-10 md:grid-cols-2 md:px-[60px]">
             <div>
                 <p class="mb-6 text-xs font-semibold uppercase text-[var(--color-primary)]">
-                    • Grandir ensemble, à Nador
+                    • Growing together, in Nador
                 </p>
 
                 <h1 class="mb-6 text-4xl font-semibold text-[var(--color-primary)] md:text-[40px]">
-                    Le bon cours pour réussir demain
+                    The right course to succeed tomorrow
                 </h1>
 
                 <p class="mb-6 text-sm leading-6 text-[var(--color-muted)]">
-                    Des petits groupes, des professeurs à l’écoute et le plaisir de progresser.
-                    Du collège au lycée, trouvons le cours qui fera la différence.
+                    Small groups, attentive teachers and the joy of making progress.
+                    From middle school to high school, let's find the course that will make the difference.
                 </p>
 
-                <a href="#cours" class="inline-block rounded-md bg-[var(--color-primary)] px-4 py-3 text-sm text-white">
-                    Découvrir les cours
+                <a href="#courses" class="inline-block rounded-md bg-[var(--color-primary)] px-4 py-3 text-sm text-white">
+                    Discover the courses
                 </a>
 
                 <p class="mt-6 mb-0 text-xs text-[var(--color-muted)]">
-                    Sans frais d’inscription · Paiement au centre
+                    No registration fees · Payment at the center
                 </p>
             </div>
 
-            <img src="images/hero.jpg" alt="Élève en train d’apprendre" class="w-full rounded-xl">
+            <img src="images/hero.jpg" alt="Student learning" class="w-full rounded-xl">
         </section>
 
         <section
             class="flex flex-wrap items-center justify-around gap-4 bg-[var(--color-soft)] px-6 py-4 text-xs text-[var(--color-primary)]">
             <p class="flex items-center gap-2">
                 <i class="fa-solid fa-users" aria-hidden="true"></i>
-                Petits groupes, grands progrès
+                Small groups, big progress
             </p>
 
             <p class="flex items-center gap-2">
                 <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                3 centres proches de vous
+                3 centers near you
             </p>
 
             <p class="flex items-center gap-2">
                 <i class="fa-solid fa-seedling" aria-hidden="true"></i>
-                Un suivi pour chaque élève
+                Follow-up for every student
             </p>
         </section>
 
-        <section id="cours" class="px-6 py-10 md:px-[60px]">
+        <section id="courses" class="px-6 py-10 md:px-[60px]">
 
             <p class="mb-3 text-xs font-semibold uppercase text-[var(--color-primary)]">
-                01 / Trouver sa voie
+                01 / Find your path
             </p>
 
             <h2 class="mb-2 text-3xl font-semibold text-[var(--color-primary)]">
-                Un cours pour chaque déclic.
+                A course for every spark.
             </h2>
 
             <p class="mb-6 text-sm text-[var(--color-muted)]">
-                Choisissez vos cours de soutien. Nous nous occupons de la suite.
+                Choose your tutoring courses. We take care of the rest.
             </p>
 
             <!-- Filters -->
             <div class="grid grid-cols-1 items-end gap-3 md:grid-cols-[1fr_auto_auto]">
 
                 <div>
-                    <label for="recherche" class="mb-2 block text-xs font-medium text-[var(--color-primary)]">
-                        Rechercher un cours
+                    <label for="search" class="mb-2 block text-xs font-medium text-[var(--color-primary)]">
+                        Search for a course
                     </label>
                     <div
                         class="flex items-center gap-3 rounded-lg border border-[var(--color-secondary)] bg-[var(--color-surface)] px-3 py-3">
                         <i class="fa-solid fa-magnifying-glass text-[var(--color-muted)]" aria-hidden="true"></i>
-                        <input id="recherche" type="search" placeholder="Ex. : mathématiques..."
+                        <input id="search" type="search" placeholder="E.g.: mathematics..."
                             class="w-full bg-transparent text-sm text-[var(--color-primary)] outline-none placeholder:text-[var(--color-muted)]">
                     </div>
                 </div>
 
                 <div>
-                    <label for="niveau" class="mb-2 block text-xs font-medium text-[var(--color-primary)]">
-                        Niveau scolaire
+                    <label for="level" class="mb-2 block text-xs font-medium text-[var(--color-primary)]">
+                        School level
                     </label>
-                    <select id="niveau"
+                    <select id="level"
                         class="w-full rounded-lg border border-[var(--color-soft)] bg-[var(--color-surface)] px-3 py-3 text-sm text-[var(--color-muted)] outline-none focus:border-[var(--color-secondary)]">
-                        <option value="">Tous les niveaux</option>
-                        <option>Primaire</option>
-                        <option>Collège</option>
-                        <option>Lycée</option>
+                        <option value="">All levels</option>
+                        <option>Primary</option>
+                        <option>Middle school</option>
+                        <option>High school</option>
                     </select>
                 </div>
 
                 <div>
-                    <label for="matiere" class="mb-2 block text-xs font-medium text-[var(--color-primary)]">
-                        Matière
+                    <label for="subject" class="mb-2 block text-xs font-medium text-[var(--color-primary)]">
+                        Subject
                     </label>
-                    <select id="matiere"
+                    <select id="subject"
                         class="w-full rounded-lg border border-[var(--color-soft)] bg-[var(--color-surface)] px-3 py-3 text-sm text-[var(--color-muted)] outline-none focus:border-[var(--color-secondary)]">
-                        <option value="">Toutes les matières</option>
-                        <option>Mathématiques</option>
-                        <option>Français</option>
-                        <option>Physique-chimie</option>
-                        <option>Anglais</option>
+                        <option value="">All subjects</option>
+                        <option>Mathematics</option>
+                        <option>French</option>
+                        <option>Physics-Chemistry</option>
+                        <option>English</option>
                     </select>
                 </div>
 
@@ -136,12 +136,12 @@
 
                 <!-- Courses -->
                 <div>
-                    <p id="compteur" class="text-sm text-[var(--color-muted)]"></p>
+                    <p id="counter" class="text-sm text-[var(--color-muted)]"></p>
 
-                    <div id="catalogue" class="mt-4 grid gap-4 md:grid-cols-2"></div>
+                    <div id="catalog" class="mt-4 grid gap-4 md:grid-cols-2"></div>
 
-                    <p id="aucun-resultat" class="mt-4 hidden text-sm text-[var(--color-muted)]">
-                        Aucun cours ne correspond à votre recherche.
+                    <p id="no-results" class="mt-4 hidden text-sm text-[var(--color-muted)]">
+                        No course matches your search.
                     </p>
                 </div>
 
