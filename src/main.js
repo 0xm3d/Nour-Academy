@@ -1,5 +1,6 @@
 import "../styles/styles.css";
 import { courses } from "./courses.js";
+import "./form.js";
 
 let catalog = document.getElementById("catalog");
 let counter = document.getElementById("counter");
