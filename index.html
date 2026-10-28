@@ -10,6 +10,7 @@
 
 <body class="bg-[var(--color-background)] font-[var(--font-family)]">
 
+    <!-- Header -->
     <header class="flex items-center justify-between border-b border-[var(--color-soft)] px-6 py-4 md:px-[60px]">
         <a href="#">
             <img src="images/logo.svg" alt="Nour Academy" class="h-7">
@@ -27,6 +28,7 @@
     </header>
 
     <main>
+        <!-- Hero -->
         <section id="home" class="grid min-h-[85vh] items-center gap-[10px] px-6 py-10 md:grid-cols-2 md:px-[60px]">
             <div>
                 <p class="mb-6 text-xs font-semibold uppercase text-[var(--color-primary)]">
@@ -55,7 +57,8 @@
             <img src="images/hero.png" alt="Student studying" class="w-full rounded-xl">
         </section>
 
-        <section id="centers"
+        <!-- Info strip -->
+        <section
             class="flex flex-wrap items-center justify-around gap-4 bg-[var(--color-soft)] px-6 py-4 text-xs text-[var(--color-primary)]">
             <p class="flex items-center gap-2">
                 <i class="fa-solid fa-users" aria-hidden="true"></i>
@@ -73,6 +76,7 @@
             </p>
         </section>
 
+        <!-- Courses -->
         <section id="courses" class="px-6 py-10 md:px-[60px]">
 
             <p class="mb-3 text-xs font-semibold uppercase text-[var(--color-primary)]">
@@ -178,12 +182,12 @@
 
         </section>
 
+        <!-- Enrollment form -->
         <section id="enrollment" class="p-[24px]">
             <span id="contact"></span>
             <h2 class="text-[24px] font-semibold mb-[16px] text-center">Enrollment</h2>
             <div id="registration-summary"
-                class="hidden max-w-[448px] mx-auto mb-6 rounded-lg border border-green-600 bg-white p-4 text-green-700"
-                role="status">
+                class="hidden max-w-[448px] mx-auto mb-6 rounded-lg border border-green-600 bg-white p-4 text-green-700">
                 <h3 class="font-semibold">Enrollment confirmed!</h3>
                 <p id="registration-summary-text" class="mt-2 text-sm"></p>
             </div>
@@ -212,7 +216,7 @@
                 </div>
 
                 <div>
-                    <label for="student-name">Student’s first name</label>
+                    <label for="student-name">Student’s Full name</label>
                     <input id="student-name" type="text"
                         class="block w-full h-[44px] border-[2px] border-gray-300 rounded-[4px] px-[8px]">
                     <p id="student-name-msg" class="text-[14px]"></p>
@@ -262,8 +266,8 @@
 
             </form>
         </section>
-        <!-- ===== PUT THIS INSIDE <main>, AFTER THE ENROLLMENT SECTION ===== -->
-
+        
+        <!-- Centers -->
         <section id="centers" class="px-6 py-10 md:px-[60px]">
 
             <p class="mb-3 text-xs font-semibold uppercase text-[var(--color-primary)]">
@@ -324,6 +328,7 @@
 
     </main>
 
+    <!-- Footer -->
     <footer id="contact" class="bg-[var(--color-primary)] px-6 py-10 text-white md:px-[60px]">
 
         <div class="grid gap-8 md:grid-cols-3">
